@@ -22,7 +22,6 @@ stops.delete_at(2)
 p stops.length()
 
 # How many ways can we return "Falkirk High" from the array?
-puts "#{stops}\n"
 p stops[2]
 p stops[-5]
 p stops.fetch(2)
