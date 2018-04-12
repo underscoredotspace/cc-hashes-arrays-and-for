@@ -69,11 +69,14 @@ p users['Avril'][:pets][0][:species]
 # Get the smallest of Erik's lottery numbers
 p users['Erik'][:lottery_numbers].sort().first()
 
+p users['Erik'][:lottery_numbers].min()
+
 # Return an array of Avril's lottery numbers that are even
 # p users['Avril'][:lottery_numbers].keep_if { |number| number%2 == 0 }
 
 avril_even_lottery_numbers = []
 for number in users['Avril'][:lottery_numbers] do
+  # avril_even_lottery_numbers.push if number.even()
   if (number%2 == 0)
     avril_even_lottery_numbers.push(number)
   end
