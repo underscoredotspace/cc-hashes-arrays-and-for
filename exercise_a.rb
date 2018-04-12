@@ -28,6 +28,7 @@ p stops.fetch(2)
 p stops.fetch(-5)
 p stops.slice(2,1)[0]
 p stops.at(2)
+p stops.at(-5)
 
 # Reverse the positions of the stops in the array
 stops.reverse!()
